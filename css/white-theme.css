@@ -1,0 +1,122 @@
+/* ============================================================
+   AGENIX — White theme (mockup 2026-11-02)
+   Loaded after style.css; remove the <link> to go back to dark.
+   ============================================================ */
+:root{
+  --w-bg:#ffffff;
+  --w-alt:#f6f5fb;
+  --w-ink:#1b1640;
+  --w-text:#4a4766;
+  --w-muted:#7a7794;
+  --w-line:#e6e3f0;
+  --w-purple:#843380;
+  --w-indigo:#382c78;
+  --w-blue:#1a86c9;
+  --w-pink:#d324b7;
+}
+
+body{background:var(--w-bg);color:var(--w-text)}
+.text-white{color:var(--w-ink)!important}
+.text-blue{color:var(--w-blue)}
+a{color:var(--w-ink)}
+a:hover{color:var(--w-purple)}
+h2.text-blue{font-size:2.4rem;letter-spacing:.5px}
+
+/* ---------- navbar: always light ---------- */
+.site-navbar,.is-sticky .site-navbar{background:rgba(255,255,255,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--w-line)}
+.site-navbar .site-navigation .site-menu>li>a,
+.is-sticky .site-navbar .site-navigation .site-menu>li>a{color:var(--w-ink)}
+.site-navbar .site-navigation .site-menu>li>a:hover{color:var(--w-purple)}
+
+/* ---------- hero ---------- */
+.homeContainer{background:
+  radial-gradient(60% 70% at 15% 20%,rgba(211,36,183,.10),transparent 70%),
+  radial-gradient(55% 65% at 85% 35%,rgba(28,163,240,.12),transparent 70%),
+  linear-gradient(180deg,#fbfaff 0%,#f3f1fb 100%)}
+#myVideo,.bgRepeat,.decorates{display:none!important}
+.headerText{color:var(--w-text)!important;font-style:normal}
+
+/* ---------- about cards ---------- */
+.about1,.about2,.about3{border-radius:14px;box-shadow:0 18px 40px -18px rgba(27,22,64,.45)}
+.about1 .text-white,.about2 .text-white,.about3 .text-white{color:#fff!important}
+
+/* ---------- services ---------- */
+.servicesSection{background:var(--w-bg)}
+.servicesSection a>p{color:var(--w-ink)}
+.servicesSection a:hover>p{color:var(--w-blue)}
+a>.whiteCircle{box-shadow:0 8px 24px -8px rgba(27,22,64,.35);border:1px solid var(--w-line)}
+.servicesSection .owl-carousel p{color:var(--w-text)}
+.svcStatLabel{color:var(--w-muted)}
+.svcStatLabel b{color:var(--w-ink)}
+.svcTags li{color:var(--w-indigo);background:#f1edfb;border-color:#d9cff3}
+.owl-nav .owl-prev,.owl-nav .owl-next{background:var(--w-indigo)!important;color:#fff!important}
+
+/* ---------- business group: map sits on a dark panel ---------- */
+.businessGroupSection{background:var(--w-alt)}
+.mapPanel{background:radial-gradient(80% 80% at 50% 40%,#2a2366 0%,#120e33 100%);border-radius:20px;padding:24px;box-shadow:0 24px 50px -24px rgba(27,22,64,.6);max-width:100%}
+.mapPanel img{max-width:100%;height:auto;display:block}
+
+/* group company cards (same tiles + brochures as agenixteam.github.io) */
+.coIntro{text-align:center;color:var(--w-muted);margin:4px 0 26px}
+.coGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:48px}
+.coCard{background:#fff;border:1px solid var(--w-line);border-radius:16px;padding:18px;display:flex;flex-direction:column;align-items:center;text-align:center;box-shadow:0 12px 28px -18px rgba(27,22,64,.4);transition:transform .2s,box-shadow .2s}
+.coCard:hover{transform:translateY(-4px);box-shadow:0 18px 34px -16px rgba(27,22,64,.5)}
+.coTile img{width:132px;height:132px;border-radius:22px;display:block;box-shadow:0 10px 22px -10px rgba(0,0,0,.5)}
+.coCard b{font-weight:400;font-size:1.25rem;color:var(--w-ink);margin:14px 0 6px}
+.coCard p{font-size:.9rem;line-height:1.55;color:var(--w-text);margin:0 0 14px;flex:1}
+.coLinks{display:flex;flex-direction:column;gap:4px;font-size:.9rem}
+.coLinks a:first-child{color:var(--w-purple);font-weight:400}
+.coLinks a:last-child{color:var(--w-muted)}
+.coLinks a:hover{color:var(--w-blue);text-decoration:none}
+
+/* ---------- partners: logo tiles ---------- */
+.partnersSection{background:var(--w-bg)}
+.partnerGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px;margin-top:8px}
+.partnerTile{height:72px;border-radius:10px;background:linear-gradient(160deg,#241d55,#15113a);display:flex;align-items:center;justify-content:center;padding:10px;transition:transform .2s,box-shadow .2s}
+.partnerTile:hover{transform:translateY(-3px);box-shadow:0 10px 22px -10px rgba(27,22,64,.6)}
+.partnerTile img{max-width:100%;max-height:100%;object-fit:contain;color:transparent;font-size:0}
+/* group & company partners: colour logos on white cards */
+.partnerLabel{font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;color:var(--w-purple);text-align:center;margin:0 0 14px}
+.partnerLabel:not(:first-of-type){margin-top:40px}
+.groupGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.groupTile{height:110px;background:#fff;border:1px solid var(--w-line);border-radius:14px;display:flex;align-items:center;justify-content:center;padding:18px 22px;box-shadow:0 10px 26px -16px rgba(27,22,64,.35);transition:transform .2s,box-shadow .2s}
+.groupTile:hover{transform:translateY(-3px);box-shadow:0 16px 30px -14px rgba(27,22,64,.45)}
+.groupTile img{max-width:100%;max-height:48px;object-fit:contain}
+.groupTile img.tall{max-height:66px}
+/* sample slots for new partners */
+.partnerTile.isNew{background:#fff;border:2px dashed #c9bfe8;flex-direction:column;gap:2px;text-decoration:none}
+.partnerTile.isNew span{font-size:.8rem;color:var(--w-purple);letter-spacing:.5px;text-transform:uppercase;line-height:1.2;text-align:center}
+.partnerTile.isNew small{font-size:.7rem;color:var(--w-muted)}
+.partnerTile.isNew:hover{border-color:var(--w-purple);background:#fbf7ff}
+.partnerNote{color:var(--w-muted);font-size:.9rem;text-align:center;margin:18px 0 0}
+
+/* ---------- follow & connect ---------- */
+.follow-connectSection{background:var(--w-alt)}
+.card-wrap::after{opacity:.25}
+.card-wrap-inner{background:#fff;backdrop-filter:none;-webkit-backdrop-filter:none}
+.card-wrap-inner::before{display:none}
+.card-name{color:var(--w-ink)}
+.card-handle{color:var(--w-muted)}
+.btn-follow{background:#fff}
+.info-bar{color:var(--w-muted);border-top-color:var(--w-line)}
+.info-bar a{color:var(--w-text)}
+.info-bar a:hover{color:var(--w-purple)}
+
+/* ---------- footer ---------- */
+.site-footer{background:var(--w-ink);color:#c9c5e3}
+.site-footer .text-white{color:#fff!important}
+
+@media (max-width:991.98px){
+  h2.text-blue{font-size:2rem}
+  .partnerGrid{grid-template-columns:repeat(auto-fill,minmax(76px,1fr));gap:6px}
+  .partnerTile{height:52px;padding:6px;border-radius:8px}
+  .coGrid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .coCard{padding:14px 12px}
+  .coTile img{width:96px;height:96px;border-radius:18px}
+  .coCard b{font-size:1.1rem;margin-top:10px}
+  .coCard p{font-size:.82rem}
+  .groupGrid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .groupTile{height:84px;padding:12px 16px}
+  .groupTile img{max-height:38px}
+  .groupTile img.tall{max-height:54px}
+}
